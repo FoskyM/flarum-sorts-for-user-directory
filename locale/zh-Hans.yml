@@ -11,6 +11,11 @@ foskym-sorts-for-user-directory:
       clarkwinkelmann-likes-received:
         most_likes_received: 获赞最多
         least_likes_received: 获赞最少
+      core:
+        recently_seen: 最近曾活动
+        least_recently_seen: 最早曾活动
+        most_comments: 回复最多
+        least_comments: 回复最少
 
 fof-user-directory:
   lib:
@@ -19,3 +24,7 @@ fof-user-directory:
       least_money: => foskym-sorts-for-user-directory.lib.integrations.antoinefr-money.least_money
       most_likes_received: => foskym-sorts-for-user-directory.lib.integrations.clarkwinkelmann-likes-received.most_likes_received
       least_likes_received: => foskym-sorts-for-user-directory.lib.integrations.clarkwinkelmann-likes-received.least_likes_received
+      recently_seen: => foskym-sorts-for-user-directory.lib.integrations.core.recently_seen
+      least_recently_seen: => foskym-sorts-for-user-directory.lib.integrations.core.least_recently_seen
+      most_comments: => foskym-sorts-for-user-directory.lib.integrations.core.most_comments
+      least_comments: => foskym-sorts-for-user-directory.lib.integrations.core.least_comments

@@ -6,6 +6,10 @@ app.initializers.add('foskym/flarum-sorts-for-user-directory', () => {
     const UserDirectoryState = flarum.extensions['fof-user-directory']?.UserDirectoryState as any;
     override(UserDirectoryState.prototype, 'sortMap', function (original) {
       const map = original();
+      map['recently_seen'] = '-last_seen_at';
+      map['least_recently_seen'] = 'last_seen_at';
+      map['most_comments'] = '-comment_count';
+      map['least_comments'] = 'comment_count';
       if ('antoinefr-money' in flarum.extensions) {
         map['most_money'] = '-money';
         map['least_money'] = 'money';
