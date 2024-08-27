@@ -6,8 +6,8 @@ foskym-sorts-for-user-directory:
   lib:
     integrations:
       user-directory:
-        least_money: Least money
-        most_money: Most money
+        least_money: 最少资产
+        most_money: 最多资产
 
 fof-user-directory:
   lib:
