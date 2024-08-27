@@ -24,6 +24,7 @@ return [
     new Extend\Locales(__DIR__.'/locale'),
 
     (new Extend\Settings())
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_nickname', 'foskym-sorts-for-user-directory.sort_by_nickname')
         ->serializeToForum('foskym-sorts-for-user-directory.sort_by_money', 'foskym-sorts-for-user-directory.sort_by_money')
         ->serializeToForum('foskym-sorts-for-user-directory.sort_by_likes_received', 'foskym-sorts-for-user-directory.sort_by_likes_received')
         ->serializeToForum('foskym-sorts-for-user-directory.sort_by_recently_seen', 'foskym-sorts-for-user-directory.sort_by_recently_seen')
@@ -34,4 +35,5 @@ return [
         ->addSortField('clarkwinkelmann_likes_received_count')
         ->addSortField('last_seen_at')
         ->addSortField('comment_count')
+        ->addSortField('nickname'),
 ];

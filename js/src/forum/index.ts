@@ -6,11 +6,18 @@ app.initializers.add('foskym/flarum-sorts-for-user-directory', () => {
     const UserDirectoryState = flarum.extensions['fof-user-directory']?.UserDirectoryState as any;
     override(UserDirectoryState.prototype, 'sortMap', function (original) {
       const map = original();
+      if ('flarum-nicknames' in flarum.extensions) {
+        if (app.forum.attribute('foskym-sorts-for-user-directory.sort_by_nickname')) {
+          map['nickname_az'] = 'nickname';
+          map['nickname_za'] = '-nickname';
+        }
+      }
+
       if (app.forum.attribute('foskym-sorts-for-user-directory.sort_by_recently_seen')) {
         map['recently_seen'] = '-last_seen_at';
         map['least_recently_seen'] = 'last_seen_at';
       }
-      
+
       if (app.forum.attribute('foskym-sorts-for-user-directory.sort_by_comments')) {
         map['most_comments'] = '-comment_count';
         map['least_comments'] = 'comment_count';

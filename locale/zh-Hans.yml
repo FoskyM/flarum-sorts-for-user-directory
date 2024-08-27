@@ -1,6 +1,7 @@
 foskym-sorts-for-user-directory:
   admin:
     settings:
+      sort_by_nickname: 按昵称排序
       sort_by_money: 按资产排序
       sort_by_likes_received: 按获赞排序
       sort_by_recently_seen: 按最近活动排序
@@ -17,6 +18,8 @@ foskym-sorts-for-user-directory:
         most_likes_received: 获赞最多
         least_likes_received: 获赞最少
       core:
+        nickname_az: 昵称 (a-z)
+        nickname_za: 昵称 (z-a)
         recently_seen: 最近曾活动
         least_recently_seen: 最早曾活动
         most_comments: 回复最多
@@ -25,6 +28,8 @@ foskym-sorts-for-user-directory:
 fof-user-directory:
   lib:
     sort:
+      nickname_az: => foskym-sorts-for-user-directory.lib.integrations.core.nickname_az
+      nickname_za: => foskym-sorts-for-user-directory.lib.integrations.core.nickname_za
       most_money: => foskym-sorts-for-user-directory.lib.integrations.antoinefr-money.most_money
       least_money: => foskym-sorts-for-user-directory.lib.integrations.antoinefr-money.least_money
       most_likes_received: => foskym-sorts-for-user-directory.lib.integrations.clarkwinkelmann-likes-received.most_likes_received
