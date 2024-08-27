@@ -1,5 +1,10 @@
 foskym-sorts-for-user-directory:
   admin:
+    settings:
+      sort_by_money: 按资产排序
+      sort_by_likes_received: 按获赞排序
+      sort_by_recently_seen: 按最近活动排序
+      sort_by_comments: 按回复排序
 
   forum:
 

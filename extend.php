@@ -23,6 +23,12 @@ return [
         ->css(__DIR__.'/less/admin.less'),
     new Extend\Locales(__DIR__.'/locale'),
 
+    (new Extend\Settings())
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_money', 'foskym-sorts-for-user-directory.sort_by_money')
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_likes_received', 'foskym-sorts-for-user-directory.sort_by_likes_received')
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_recently_seen', 'foskym-sorts-for-user-directory.sort_by_recently_seen')
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_comments', 'foskym-sorts-for-user-directory.sort_by_comments'),
+
     (new Extend\ApiController(ListUsersController::class))
         ->addSortField('money')
         ->addSortField('clarkwinkelmann_likes_received_count')
