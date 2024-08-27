@@ -25,4 +25,5 @@ return [
 
     (new Extend\ApiController(ListUsersController::class))
         ->addSortField('money')
+        ->addSortField('clarkwinkelmann_likes_received_count')
 ];

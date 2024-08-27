@@ -10,6 +10,10 @@ app.initializers.add('foskym/flarum-sorts-for-user-directory', () => {
         map['most_money'] = '-money';
         map['least_money'] = 'money';
       }
+      if ('clarkwinkelmann-likes-received' in flarum.extensions) {
+        map['most_likes_received'] = '-clarkwinkelmann_likes_received_count';
+        map['least_likes_received'] = 'clarkwinkelmann_likes_received_count';
+      }
       return map;
     });
   }

@@ -5,12 +5,17 @@ foskym-sorts-for-user-directory:
 
   lib:
     integrations:
-      user-directory:
+      antoinefr-money:
         least_money: Least money
         most_money: Most money
+      clarkwinkelmann-likes-received:
+        most_likes_received: Most likes received
+        least_likes_received: Least likes received
 
 fof-user-directory:
   lib:
     sort:
-      most_money: => foskym-sorts-for-user-directory.lib.integrations.user-directory.most_money
-      least_money: => foskym-sorts-for-user-directory.lib.integrations.user-directory.least_money
+      most_money: => foskym-sorts-for-user-directory.lib.integrations.antoinefr-money.most_money
+      least_money: => foskym-sorts-for-user-directory.lib.integrations.antoinefr-money.least_money
+      most_likes_received: => foskym-sorts-for-user-directory.lib.integrations.clarkwinkelmann-likes-received.most_likes_received
+      least_likes_received: => foskym-sorts-for-user-directory.lib.integrations.clarkwinkelmann-likes-received.least_likes_received
