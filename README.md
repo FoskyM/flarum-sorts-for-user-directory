@@ -4,7 +4,8 @@
 
 A [Flarum](http://flarum.org) extension. Add more sort type for fof/user-directory.
 
-![image](https://github.com/user-attachments/assets/ae84691c-4821-4fc2-a3d4-76b9fa897956)
+![image](https://github.com/user-attachments/assets/9974843a-8cba-41b7-8261-732cf04d7cc6)
+![image](https://github.com/user-attachments/assets/9ff75b1b-bb8a-44dd-837b-39e0822f1937)
 
 
 ## Installation
