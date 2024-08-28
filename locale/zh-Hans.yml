@@ -2,6 +2,8 @@ foskym-sorts-for-user-directory:
   admin:
     settings:
       sort_by_nickname: 按昵称排序（需安装 Nicknames）
+      sort_by_monthly_posts: 按月发帖/回帖排序（可能导致性能问题）
+      sort_by_groups_count: 按用户组数量排序
       sort_by_money: 按资产排序 (需安装 Antoinefr Money)
       sort_by_likes_received: 按获赞排序 (需安装 Likes Received)
       sort_by_recently_seen: 按最近活动排序
@@ -25,6 +27,9 @@ foskym-sorts-for-user-directory:
         least_recently_seen: 最早曾活动
         most_comments: 回复最多
         least_comments: 回复最少
+        most_monthly_discussions: 月发帖最多
+        most_monthly_comments: 月回帖最多
+        most_groups_count: 用户组最多
       ziven-daily-check-in:
         recently_checkin: 最近签到
         most_total_checkin: 累计签到最多
@@ -46,3 +51,6 @@ fof-user-directory:
       recently_checkin: => foskym-sorts-for-user-directory.lib.integrations.ziven-daily-check-in.recently_checkin
       most_total_checkin: => foskym-sorts-for-user-directory.lib.integrations.ziven-daily-check-in.most_total_checkin
       most_total_continuous_checkin: => foskym-sorts-for-user-directory.lib.integrations.ziven-daily-check-in.most_total_continuous_checkin
+      most_monthly_discussions: => foskym-sorts-for-user-directory.lib.integrations.core.most_monthly_discussions
+      most_monthly_comments: => foskym-sorts-for-user-directory.lib.integrations.core.most_monthly_comments
+      most_groups_count: => foskym-sorts-for-user-directory.lib.integrations.core.most_groups_count

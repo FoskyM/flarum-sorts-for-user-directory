@@ -13,6 +13,15 @@ app.initializers.add('foskym/flarum-sorts-for-user-directory', () => {
         }
       }
 
+      if (app.forum.attribute('foskym-sorts-for-user-directory.sort_by_monthly_posts')) {
+        map['most_monthly_discussions'] = '-monthly_discussion_count';
+        map['most_monthly_comments'] = '-monthly_comment_count';
+      }
+
+      if (app.forum.attribute('foskym-sorts-for-user-directory.sort_by_groups_count')) {
+        map['most_groups_count'] = '-groups_count';
+      }
+
       if (app.forum.attribute('foskym-sorts-for-user-directory.sort_by_recently_seen')) {
         map['recently_seen'] = '-last_seen_at';
         map['least_recently_seen'] = 'last_seen_at';

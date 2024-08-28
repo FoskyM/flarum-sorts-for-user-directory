@@ -8,6 +8,16 @@ app.initializers.add('foskym/flarum-sorts-for-user-directory', () => {
       type: 'boolean',
     })
     .registerSetting({
+      setting: 'foskym-sorts-for-user-directory.sort_by_monthly_posts',
+      label: app.translator.trans('foskym-sorts-for-user-directory.admin.settings.sort_by_monthly_posts'),
+      type: 'boolean',
+    })
+    .registerSetting({
+      setting: 'foskym-sorts-for-user-directory.sort_by_groups_count',
+      label: app.translator.trans('foskym-sorts-for-user-directory.admin.settings.sort_by_groups_count'),
+      type: 'boolean',
+    })
+    .registerSetting({
       setting: 'foskym-sorts-for-user-directory.sort_by_money',
       label: app.translator.trans('foskym-sorts-for-user-directory.admin.settings.sort_by_money'),
       type: 'boolean',
