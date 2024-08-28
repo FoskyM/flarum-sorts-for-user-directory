@@ -6,6 +6,7 @@ foskym-sorts-for-user-directory:
       sort_by_likes_received: 按获赞排序 (需安装 Likes Received)
       sort_by_recently_seen: 按最近活动排序
       sort_by_comments: 按回复排序
+      sort_by_ziven_checkin: 按签到排序 (需安装 Ziven Daily Check In)
 
   forum:
 
@@ -24,6 +25,10 @@ foskym-sorts-for-user-directory:
         least_recently_seen: 最早曾活动
         most_comments: 回复最多
         least_comments: 回复最少
+      ziven-daily-check-in:
+        recently_checkin: 最近签到
+        most_total_checkin: 累计签到最多
+        most_total_continuous_checkin: 连续签到最多
 
 fof-user-directory:
   lib:
@@ -38,3 +43,6 @@ fof-user-directory:
       least_recently_seen: => foskym-sorts-for-user-directory.lib.integrations.core.least_recently_seen
       most_comments: => foskym-sorts-for-user-directory.lib.integrations.core.most_comments
       least_comments: => foskym-sorts-for-user-directory.lib.integrations.core.least_comments
+      recently_checkin: => foskym-sorts-for-user-directory.lib.integrations.ziven-daily-check-in.recently_checkin
+      most_total_checkin: => foskym-sorts-for-user-directory.lib.integrations.ziven-daily-check-in.most_total_checkin
+      most_total_continuous_checkin: => foskym-sorts-for-user-directory.lib.integrations.ziven-daily-check-in.most_total_continuous_checkin

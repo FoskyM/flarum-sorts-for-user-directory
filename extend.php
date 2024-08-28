@@ -28,12 +28,17 @@ return [
         ->serializeToForum('foskym-sorts-for-user-directory.sort_by_money', 'foskym-sorts-for-user-directory.sort_by_money')
         ->serializeToForum('foskym-sorts-for-user-directory.sort_by_likes_received', 'foskym-sorts-for-user-directory.sort_by_likes_received')
         ->serializeToForum('foskym-sorts-for-user-directory.sort_by_recently_seen', 'foskym-sorts-for-user-directory.sort_by_recently_seen')
-        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_comments', 'foskym-sorts-for-user-directory.sort_by_comments'),
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_comments', 'foskym-sorts-for-user-directory.sort_by_comments')
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_ziven_checkin', 'foskym-sorts-for-user-directory.sort_by_ziven_checkin'),
 
     (new Extend\ApiController(ListUsersController::class))
         ->addSortField('money')
         ->addSortField('clarkwinkelmann_likes_received_count')
         ->addSortField('last_seen_at')
         ->addSortField('comment_count')
-        ->addSortField('nickname'),
+        ->addSortField('nickname')
+        // Ziven Daily Check In
+        ->addSortField('total_checkin_count')
+        ->addSortField('total_continuous_checkin_count')
+        ->addSortField('last_checkin_time')
 ];

@@ -36,6 +36,14 @@ app.initializers.add('foskym/flarum-sorts-for-user-directory', () => {
           map['least_likes_received'] = 'clarkwinkelmann_likes_received_count';
         }
       }
+
+      if ('ziiven-daily-check-in' in flarum.extensions) {
+        if (app.forum.attribute('foskym-sorts-for-user-directory.sort_by_ziven_checkin')) {
+          map['recently_checkin'] = '-last_checkin_time';
+          map['most_total_checkin'] = '-total_checkin_count';
+          map['most_total_continuous_checkin'] = '-total_continuous_checkin_count';
+        }
+      }
       return map;
     });
   }
