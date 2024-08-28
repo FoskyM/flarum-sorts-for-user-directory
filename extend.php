@@ -36,7 +36,8 @@ $extend = [
         ->serializeToForum('foskym-sorts-for-user-directory.sort_by_likes_received', 'foskym-sorts-for-user-directory.sort_by_likes_received')
         ->serializeToForum('foskym-sorts-for-user-directory.sort_by_recently_seen', 'foskym-sorts-for-user-directory.sort_by_recently_seen')
         ->serializeToForum('foskym-sorts-for-user-directory.sort_by_comments', 'foskym-sorts-for-user-directory.sort_by_comments')
-        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_ziven_checkin', 'foskym-sorts-for-user-directory.sort_by_ziven_checkin'),
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_ziven_checkin', 'foskym-sorts-for-user-directory.sort_by_ziven_checkin')
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_invited_user', 'foskym-sorts-for-user-directory.sort_by_invited_user'),
 
     (new Extend\ApiController(ListUsersController::class))
         ->addSortField('money')
@@ -49,7 +50,9 @@ $extend = [
         ->addSortField('total_continuous_checkin_count')
         ->addSortField('last_checkin_time')
 
-        ->addSortField('groups_count'),
+        ->addSortField('groups_count')
+
+        ->addSortField('invited_user'),
 
     // fake sort field
     (new Extend\Middleware('api'))

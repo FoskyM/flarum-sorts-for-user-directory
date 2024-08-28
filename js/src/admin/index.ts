@@ -41,5 +41,10 @@ app.initializers.add('foskym/flarum-sorts-for-user-directory', () => {
       setting: 'foskym-sorts-for-user-directory.sort_by_ziven_checkin',
       label: app.translator.trans('foskym-sorts-for-user-directory.admin.settings.sort_by_ziven_checkin'),
       type: 'boolean',
+    })
+    .registerSetting({
+      setting: 'foskym-sorts-for-user-directory.sort_by_invited_user',
+      label: app.translator.trans('foskym-sorts-for-user-directory.admin.settings.sort_by_invited_user'),
+      type: 'boolean',
     });
 });

@@ -89,6 +89,13 @@ app.initializers.add('foskym/flarum-sorts-for-user-directory', () => {
           map['most_total_continuous_checkin'] = '-total_continuous_checkin_count';
         }
       }
+
+      if ('xypp-invite-user' in flarum.extensions) {
+        if (app.forum.attribute('foskym-sorts-for-user-directory.sort_by_invited_user')) {
+          map['most_invited_user'] = '-invited_user';
+        }
+      }
+
       return map;
     });
   }

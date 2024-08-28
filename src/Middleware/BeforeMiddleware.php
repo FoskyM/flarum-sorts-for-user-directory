@@ -31,6 +31,7 @@ class BeforeMiddleware implements MiddlewareInterface
             'groups_count',
             'monthly_discussion_count',
             'monthly_comment_count',
+            'invited_user'
         ];
         $path = $request->getUri()->getPath();
         if ($path === '/users') {

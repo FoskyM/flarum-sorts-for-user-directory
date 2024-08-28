@@ -9,6 +9,7 @@ foskym-sorts-for-user-directory:
       sort_by_recently_seen: 按最近活动排序
       sort_by_comments: 按回复排序
       sort_by_ziven_checkin: 按签到排序 (需安装 Ziven Daily Check In)
+      sort_by_invited_user: 按邀请用户数量排序 (需安装 xypp/invite-user)
 
   forum:
     user_card:
@@ -37,6 +38,8 @@ foskym-sorts-for-user-directory:
         recently_checkin: 最近签到
         most_total_checkin: 累计签到最多
         most_total_continuous_checkin: 连续签到最多
+      xypp-invite-user:
+        most_invited_user: 邀请用户最多
 
 fof-user-directory:
   lib:
@@ -57,3 +60,4 @@ fof-user-directory:
       most_monthly_discussions: => foskym-sorts-for-user-directory.lib.integrations.core.most_monthly_discussions
       most_monthly_comments: => foskym-sorts-for-user-directory.lib.integrations.core.most_monthly_comments
       most_groups_count: => foskym-sorts-for-user-directory.lib.integrations.core.most_groups_count
+      most_invited_user: => foskym-sorts-for-user-directory.lib.integrations.xypp-invite-user.most_invited_user
