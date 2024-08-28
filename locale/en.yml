@@ -11,6 +11,9 @@ foskym-sorts-for-user-directory:
       sort_by_ziven_checkin: Sort by check-in (requires Ziven Daily Check In)
 
   forum:
+    user_card:
+      monthly_discussions: Monthly discussions {count}
+      monthly_comments: Monthly comments {count}
 
   lib:
     integrations:

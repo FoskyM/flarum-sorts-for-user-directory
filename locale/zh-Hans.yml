@@ -11,6 +11,9 @@ foskym-sorts-for-user-directory:
       sort_by_ziven_checkin: 按签到排序 (需安装 Ziven Daily Check In)
 
   forum:
+    user_card:
+      monthly_discussions: 月发帖 {count}
+      monthly_comments: 月回帖 {count}
 
   lib:
     integrations:
