@@ -10,6 +10,7 @@ foskym-sorts-for-user-directory:
       sort_by_comments: 按回复数量排序
       sort_by_ziven_checkin: 按签到排序 (需安装 Ziven Daily Check In)
       sort_by_invited_user: 按邀请用户数量排序 (需安装 xypp/invite-user)
+      sort_by_badges_count: 按徽章数量排序 (需安装 v17development/flarum-user-badges)
 
   forum:
     user_card:
@@ -40,6 +41,8 @@ foskym-sorts-for-user-directory:
         most_total_continuous_checkin: 连续签到最多
       xypp-invite-user:
         most_invited_user: 邀请用户最多
+      v17development-user-badges:
+        most_badges_count: 徽章最多
 
 fof-user-directory:
   lib:
@@ -61,3 +64,4 @@ fof-user-directory:
       most_monthly_comments: => foskym-sorts-for-user-directory.lib.integrations.core.most_monthly_comments
       most_groups_count: => foskym-sorts-for-user-directory.lib.integrations.core.most_groups_count
       most_invited_user: => foskym-sorts-for-user-directory.lib.integrations.xypp-invite-user.most_invited_user
+      most_badges_count: => foskym-sorts-for-user-directory.lib.integrations.v17development-user-badges.most_badges_count

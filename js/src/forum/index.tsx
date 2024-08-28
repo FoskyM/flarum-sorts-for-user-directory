@@ -96,6 +96,12 @@ app.initializers.add('foskym/flarum-sorts-for-user-directory', () => {
         }
       }
 
+      if ('v17development-user-badges' in flarum.extensions) {
+        if (app.forum.attribute('foskym-sorts-for-user-directory.sort_by_badges_count')) {
+          map['most_badges_count'] = '-badges_count';
+        }
+      }
+
       return map;
     });
   }

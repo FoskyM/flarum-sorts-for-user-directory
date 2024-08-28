@@ -46,5 +46,10 @@ app.initializers.add('foskym/flarum-sorts-for-user-directory', () => {
       setting: 'foskym-sorts-for-user-directory.sort_by_invited_user',
       label: app.translator.trans('foskym-sorts-for-user-directory.admin.settings.sort_by_invited_user'),
       type: 'boolean',
+    })
+    .registerSetting({
+      setting: 'foskym-sorts-for-user-directory.sort_by_badges_count',
+      label: app.translator.trans('foskym-sorts-for-user-directory.admin.settings.sort_by_badges_count'),
+      type: 'boolean',
     });
 });

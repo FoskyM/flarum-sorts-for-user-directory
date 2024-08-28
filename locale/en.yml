@@ -10,6 +10,7 @@ foskym-sorts-for-user-directory:
       sort_by_comments: Sort by comments count
       sort_by_ziven_checkin: Sort by check-in (requires Ziven Daily Check In)
       sort_by_invited_user: Sort by invited user count (requires xypp/invite-user)
+      sort_by_badges_count: Sort by badges count (requires v17development/flarum-user-badges)
 
   forum:
     user_card:
@@ -40,6 +41,8 @@ foskym-sorts-for-user-directory:
         most_total_continuous_checkin: Most total continuous check-in
       xypp-invite-user:
         most_invited_user: Most invited user count
+      v17development-user-badges:
+        most_badges_count: Most badges count
 
 fof-user-directory:
   lib:
@@ -61,3 +64,4 @@ fof-user-directory:
       most_monthly_comments: => foskym-sorts-for-user-directory.lib.integrations.core.most_monthly_comments
       most_groups_count: => foskym-sorts-for-user-directory.lib.integrations.core.most_groups_count
       most_invited_user: => foskym-sorts-for-user-directory.lib.integrations.xypp-invite-user.invited_user
+      most_badges_count: => foskym-sorts-for-user-directory.lib.integrations.v17development-user-badges.most_badges_count

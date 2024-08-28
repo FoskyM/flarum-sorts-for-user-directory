@@ -51,11 +51,15 @@ class SortFilter
                 ->groupBy('users.id')
                 ->orderBy('monthly_comment_count', $desc ? 'desc' : 'asc');
         } else if ($sort === 'invited_user') {
-            // 表 invite_user 中 invited_by_user_id
             $filter->getQuery()->selectRaw($tablePrefix . 'users.*, COALESCE(COUNT(' . $tablePrefix . 'invite_user.id), 0) as invited_user')
                 ->leftJoin('invite_user', 'users.id', '=', 'invite_user.invited_by_user_id')
                 ->groupBy('users.id')
                 ->orderBy('invited_user', $desc ? 'desc' : 'asc');
+        } else if ($sort === 'badges_count') {
+            $filter->getQuery()->selectRaw($tablePrefix . 'users.*, COALESCE(COUNT(' . $tablePrefix . 'badge_user.user_id), 0) as badges_count')
+                ->leftJoin('badge_user', 'users.id', '=', 'badge_user.user_id')
+                ->groupBy('users.id')
+                ->orderBy('badges_count', $desc ? 'desc' : 'asc');
         }
     }
 }
