@@ -27,4 +27,4 @@ php flarum cache:clear
 
 - [Packagist](https://packagist.org/packages/foskym/flarum-sorts-for-user-directory)
 - [GitHub](https://github.com/foskym/flarum-sorts-for-user-directory)
-- [Discuss](https://discuss.flarum.org/d/PUT_DISCUSS_SLUG_HERE)
+- [Discuss](https://discuss.flarum.org/d/35366-sorts-for-user-directory)
