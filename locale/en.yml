@@ -63,5 +63,5 @@ fof-user-directory:
       most_monthly_discussions: => foskym-sorts-for-user-directory.lib.integrations.core.most_monthly_discussions
       most_monthly_comments: => foskym-sorts-for-user-directory.lib.integrations.core.most_monthly_comments
       most_groups_count: => foskym-sorts-for-user-directory.lib.integrations.core.most_groups_count
-      most_invited_user: => foskym-sorts-for-user-directory.lib.integrations.xypp-invite-user.invited_user
+      most_invited_user: => foskym-sorts-for-user-directory.lib.integrations.xypp-invite-user.most_invited_user
       most_badges_count: => foskym-sorts-for-user-directory.lib.integrations.v17development-user-badges.most_badges_count
