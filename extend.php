@@ -16,12 +16,12 @@ use Flarum\Api\Controller\ListUsersController;
 
 return [
     (new Extend\Frontend('forum'))
-        ->js(__DIR__.'/js/dist/forum.js')
-        ->css(__DIR__.'/less/forum.less'),
+        ->js(__DIR__ . '/js/dist/forum.js')
+        ->css(__DIR__ . '/less/forum.less'),
     (new Extend\Frontend('admin'))
-        ->js(__DIR__.'/js/dist/admin.js')
-        ->css(__DIR__.'/less/admin.less'),
-    new Extend\Locales(__DIR__.'/locale'),
+        ->js(__DIR__ . '/js/dist/admin.js')
+        ->css(__DIR__ . '/less/admin.less'),
+    new Extend\Locales(__DIR__ . '/locale'),
 
     (new Extend\Settings())
         ->serializeToForum('foskym-sorts-for-user-directory.sort_by_nickname', 'foskym-sorts-for-user-directory.sort_by_nickname')

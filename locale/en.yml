@@ -1,9 +1,9 @@
 foskym-sorts-for-user-directory:
   admin:
     settings:
-      sort_by_nickname: Sort by nickname
-      sort_by_money: Sort by money
-      sort_by_likes_received: Sort by likes received
+      sort_by_nickname: Sort by nickname (requires Nicknames)
+      sort_by_money: Sort by money (requires Antoinefr Money)
+      sort_by_likes_received: Sort by likes received (requires Likes Received)
       sort_by_recently_seen: Sort by recently seen
       sort_by_comments: Sort by comments
 
