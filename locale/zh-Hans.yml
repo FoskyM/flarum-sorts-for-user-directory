@@ -7,7 +7,7 @@ foskym-sorts-for-user-directory:
       sort_by_money: 按资产排序 (需安装 Antoinefr Money)
       sort_by_likes_received: 按获赞排序 (需安装 Likes Received)
       sort_by_recently_seen: 按最近活动排序
-      sort_by_comments: 按回复排序
+      sort_by_comments: 按回复数量排序
       sort_by_ziven_checkin: 按签到排序 (需安装 Ziven Daily Check In)
       sort_by_invited_user: 按邀请用户数量排序 (需安装 xypp/invite-user)
 
