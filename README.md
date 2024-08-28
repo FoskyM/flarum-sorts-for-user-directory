@@ -4,6 +4,9 @@
 
 A [Flarum](http://flarum.org) extension. Add more sort type for fof/user-directory.
 
+![image](https://github.com/user-attachments/assets/ae84691c-4821-4fc2-a3d4-76b9fa897956)
+
+
 ## Installation
 
 Install with composer:
@@ -24,4 +27,4 @@ php flarum cache:clear
 
 - [Packagist](https://packagist.org/packages/foskym/flarum-sorts-for-user-directory)
 - [GitHub](https://github.com/foskym/flarum-sorts-for-user-directory)
-- [Discuss](https://discuss.flarum.org/d/PUT_DISCUSS_SLUG_HERE)
+- [Discuss](https://discuss.flarum.org/d/35366-sorts-for-user-directory)
