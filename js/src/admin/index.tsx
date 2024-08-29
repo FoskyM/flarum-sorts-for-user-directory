@@ -1,7 +1,18 @@
 import app from 'flarum/admin/app';
+import { override } from 'flarum/common/extend';
 import LinkButton from 'flarum/common/components/LinkButton';
 
+import addSort from '../common/addSort';
+const SortMap = flarum.extensions['fof-user-directory']?.SortMap as any;
+override(SortMap.prototype, 'sortMap', function (original)  {
+  let map = original();
+  map = addSort(map, true);
+  return map;
+});
+
 app.initializers.add('foskym/flarum-sorts-for-user-directory', () => {
+
+
   app.extensionData
     .for('foskym-sorts-for-user-directory')
     .registerSetting(function () {
