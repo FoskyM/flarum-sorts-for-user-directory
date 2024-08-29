@@ -12,6 +12,8 @@ foskym-sorts-for-user-directory:
       sort_by_invited_user: Sort by invited user count (requires xypp/invite-user)
       sort_by_badges_count: Sort by badges count (requires v17development/flarum-user-badges)
 
+    go_to_user_directory_extension: Go to User Directory extension with more settings
+
   forum:
     user_card:
       monthly_discussions: Monthly discussions {count}

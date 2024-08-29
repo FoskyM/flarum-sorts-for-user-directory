@@ -12,6 +12,8 @@ foskym-sorts-for-user-directory:
       sort_by_invited_user: 按邀请用户数量排序 (需安装 xypp/invite-user)
       sort_by_badges_count: 按徽章数量排序 (需安装 v17development/flarum-user-badges)
 
+    go_to_user_directory_extension: 在 User Directory 中进行更多配置
+
   forum:
     user_card:
       monthly_discussions: 月发帖 {count}

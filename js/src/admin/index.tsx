@@ -13,7 +13,7 @@ app.initializers.add('foskym/flarum-sorts-for-user-directory', () => {
                 id: 'fof-user-directory',
               })}
             >
-              More Settings in <b>FoF User Directory</b>
+              {app.translator.trans('foskym-sorts-for-user-directory.admin.go_to_user_directory_extension')}
             </LinkButton>
           </label>
         </div>
