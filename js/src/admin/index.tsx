@@ -1,7 +1,24 @@
 import app from 'flarum/admin/app';
+import LinkButton from 'flarum/common/components/LinkButton';
 
 app.initializers.add('foskym/flarum-sorts-for-user-directory', () => {
-  app.extensionData.for('foskym-sorts-for-user-directory')
+  app.extensionData
+    .for('foskym-sorts-for-user-directory')
+    .registerSetting(function () {
+      return (
+        <div className="Form-group">
+          <label>
+            <LinkButton
+              href={app.route('extension', {
+                id: 'fof-user-directory',
+              })}
+            >
+              More Settings in <b>FoF User Directory</b>
+            </LinkButton>
+          </label>
+        </div>
+      );
+    })
     .registerSetting({
       setting: 'foskym-sorts-for-user-directory.sort_by_nickname',
       label: app.translator.trans('foskym-sorts-for-user-directory.admin.settings.sort_by_nickname'),
