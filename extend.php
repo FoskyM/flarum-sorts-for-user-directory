@@ -29,16 +29,16 @@ $extend = [
     new Extend\Locales(__DIR__ . '/locale'),
 
     (new Extend\Settings())
-        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_nickname', 'foskym-sorts-for-user-directory.sort_by_nickname')
-        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_monthly_posts', 'foskym-sorts-for-user-directory.sort_by_monthly_posts')
-        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_groups_count', 'foskym-sorts-for-user-directory.sort_by_groups_count')
-        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_money', 'foskym-sorts-for-user-directory.sort_by_money')
-        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_likes_received', 'foskym-sorts-for-user-directory.sort_by_likes_received')
-        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_recently_seen', 'foskym-sorts-for-user-directory.sort_by_recently_seen')
-        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_comments', 'foskym-sorts-for-user-directory.sort_by_comments')
-        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_ziven_checkin', 'foskym-sorts-for-user-directory.sort_by_ziven_checkin')
-        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_invited_user', 'foskym-sorts-for-user-directory.sort_by_invited_user')
-        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_badges_count', 'foskym-sorts-for-user-directory.sort_by_badges_count'),
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_nickname', 'foskym-sorts-for-user-directory.sort_by_nickname', 'boolval')
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_monthly_posts', 'foskym-sorts-for-user-directory.sort_by_monthly_posts', 'boolval')
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_groups_count', 'foskym-sorts-for-user-directory.sort_by_groups_count', 'boolval')
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_money', 'foskym-sorts-for-user-directory.sort_by_money', 'boolval')
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_likes_received', 'foskym-sorts-for-user-directory.sort_by_likes_received', 'boolval')
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_recently_seen', 'foskym-sorts-for-user-directory.sort_by_recently_seen', 'boolval')
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_comments', 'foskym-sorts-for-user-directory.sort_by_comments', 'boolval')
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_ziven_checkin', 'foskym-sorts-for-user-directory.sort_by_ziven_checkin', 'boolval')
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_invited_user', 'foskym-sorts-for-user-directory.sort_by_invited_user', 'boolval')
+        ->serializeToForum('foskym-sorts-for-user-directory.sort_by_badges_count', 'foskym-sorts-for-user-directory.sort_by_badges_count', 'boolval'),
 
     (new Extend\ApiController(ListUsersController::class))
         ->addSortField('money')

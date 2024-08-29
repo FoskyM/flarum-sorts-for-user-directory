@@ -91,7 +91,7 @@ export default function addSort(map: any, isAdmin = false) {
       if (sortType !== 'core' && sortType in flarum.extensions) {
         continue;
       }
-      const enabled = isAdmin ? app.data.settings[sort.key] : app.forum.attribute(sort.key);
+      const enabled = isAdmin ? app.data.settings[sort.key] === '1' : app.forum.attribute(sort.key);
       if (enabled) {
         for (const key in sort.map) {
           map[key] = sort.map[key];
