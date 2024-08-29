@@ -40,6 +40,19 @@ app.initializers.add('foskym/flarum-sorts-for-user-directory', () => {
 
   if ('fof-user-directory' in flarum.extensions) {
     const UserDirectoryState = flarum.extensions['fof-user-directory']?.UserDirectoryState as any;
+    const originalSortMap = UserDirectoryState.prototype.sortMap();
+    override(UserDirectoryState.prototype, 'loadResults', function (original, offset) {
+      const sort = this.params.sort || 'default';
+      if (sort !== app.forum.attribute('userDirectoryDefaultSort') && !(sort in originalSortMap)) {
+        const params = this.requestParams();
+        params.page = { offset };
+        params.include = params.include.join(',');
+
+        return this.app.store.find('users', params);
+      }
+
+      return original(offset);
+    });
     override(UserDirectoryState.prototype, 'sortMap', function (original) {
       const map = original();
       if ('flarum-nicknames' in flarum.extensions) {
