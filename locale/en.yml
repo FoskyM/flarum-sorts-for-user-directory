@@ -14,6 +14,8 @@ foskym-sorts-for-user-directory:
 
     go_to_user_directory_extension: Go to User Directory extension with more settings
 
+    go_to_this_extension: Go to Sorts For User Directory extension with more settings
+
   forum:
     user_card:
       monthly_discussions: Monthly discussions {count}

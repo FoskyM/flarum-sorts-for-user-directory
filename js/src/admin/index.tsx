@@ -69,4 +69,20 @@ app.initializers.add('foskym/flarum-sorts-for-user-directory', () => {
       label: app.translator.trans('foskym-sorts-for-user-directory.admin.settings.sort_by_badges_count'),
       type: 'boolean',
     });
+
+  app.extensionData.for('fof-user-directory').registerSetting(function () {
+    return (
+      <div className="Form-group">
+        <label>
+          <LinkButton
+            href={app.route('extension', {
+              id: 'foskym-sorts-for-user-directory',
+            })}
+          >
+            {app.translator.trans('foskym-sorts-for-user-directory.admin.go_to_this_extension')}
+          </LinkButton>
+        </label>
+      </div>
+    );
+  });
 });

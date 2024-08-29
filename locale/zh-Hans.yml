@@ -14,6 +14,8 @@ foskym-sorts-for-user-directory:
 
     go_to_user_directory_extension: 在 User Directory 中进行更多配置
 
+    go_to_this_extension: 在 Sorts For User Directory 中进行更多配置
+
   forum:
     user_card:
       monthly_discussions: 月发帖 {count}
